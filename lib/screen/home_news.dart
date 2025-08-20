@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/screen/ctagreis_list_view.dart';
- 
+import 'package:news_app/screen/news_tile.dart';
+import 'package:news_app/views/news_tile_view.dart';
 
 class HomeNews extends StatelessWidget {
   HomeNews({super.key});
@@ -33,7 +34,19 @@ class HomeNews extends StatelessWidget {
           ),
         ),
       ),
-      body: CtagreisListView(),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: const Column(
+          
+          children: [
+            CtagreisListView(),
+            Expanded(child: NewsTileView()),
+            
+            
+        
+          ],
+        ),
+      ),
     );
   }
 }

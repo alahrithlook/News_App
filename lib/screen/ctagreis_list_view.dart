@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/gtagry_item.dart';
-import 'package:news_app/screen/news_page.dart';
+import 'package:news_app/views/news_page.dart';
 import 'package:news_app/screen/news_tile.dart';
 
 class CtagreisListView extends StatelessWidget {
@@ -28,7 +28,8 @@ class CtagreisListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount:10,
         itemBuilder: (context, index) {
-          return  NewsTile(
+          return  NewsPage(
+            catagry: catagryitem[index],
             
           );
         },

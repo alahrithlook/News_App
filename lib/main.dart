@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/screen/home_news.dart';
 
 import 'package:news_app/screen/news_tile.dart';
 
@@ -14,7 +15,7 @@ class NewsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: NewsTile(),
+      home: HomeNews(),
     );
   }
 }
